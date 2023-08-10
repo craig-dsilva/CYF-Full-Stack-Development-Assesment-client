@@ -14,6 +14,7 @@ code {
 
 .App {
   text-align: center;
+  margin: 1rem;
 }
 
 .Header {
@@ -44,6 +45,11 @@ code {
 .form-buttons {
   display: flex;
   justify-content: space-around;
+}
+
+/* Videos.js */
+.Videos {
+  margin: 2rem;
 }
 
 /* Video.js */
