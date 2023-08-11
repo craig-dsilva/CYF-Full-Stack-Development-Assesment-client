@@ -20,7 +20,7 @@ const Rating = ({ rating, videoId }) => {
       })
     );
     fetch(
-      `${process.env.REACT_APP_FETCH_URL}${id}/?vote=${voteType}`,
+      `${process.env.REACT_APP_FETCH_URL}/${id}?vote=${voteType}`,
       {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
