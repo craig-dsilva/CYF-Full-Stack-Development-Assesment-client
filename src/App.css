@@ -75,10 +75,16 @@ code {
   justify-content: space-around;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 800px) {
   /* Videos.js */
   .Videos {
     display: grid;
+    grid-template-columns: repeat(2, auto);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .Videos {
     grid-template-columns: repeat(4, auto);
   }
 }
