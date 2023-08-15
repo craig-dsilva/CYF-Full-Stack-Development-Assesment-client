@@ -21,7 +21,7 @@ const App = () => {
   const [error, setError] = useState("");
 
   useEffect(() => {
-    fetch(`${process.env.REACT_APP_FETCH_URL}?order=${order}`)
+    fetch(`https://videorecommendations.craigdsilva.com?order=${order}`)
       .then((res) => res.json())
       .then((data) => {
         setVideos(data);

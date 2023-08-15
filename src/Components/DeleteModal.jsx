@@ -15,7 +15,7 @@ const DeleteModal = ({ id, closeModal }) => {
   // Deletes a video
   const deleteVideo = () => {
     closeModal(false);
-    fetch(`${process.env.REACT_APP_FETCH_URL}${id}`, {
+    fetch(`https://videorecommendations.craigdsilva.com/${id}`, {
       method: "DELETE",
       headers: { "Content-Type": "application/json" },
     }).catch((error) => ctx.setError(error));

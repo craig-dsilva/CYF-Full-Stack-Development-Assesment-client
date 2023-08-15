@@ -36,7 +36,7 @@ const AddVideo = ({
         url: fixedUrl,
         date: new Date()
       };
-      fetch(process.env.REACT_APP_FETCH_URL, {
+      fetch("https://videorecommendations.craigdsilva.com/", {
         method: "POST",
         mode: "cors",
         headers: { "Content-Type": "application/json" },
