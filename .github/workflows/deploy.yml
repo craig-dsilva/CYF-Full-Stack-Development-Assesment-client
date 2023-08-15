@@ -15,7 +15,7 @@ jobs:
         with:
             aws-secret-access-key-id: ${{ secrets.AWS_ACCESS_KEY }}
             aws-secret-access-key: ${{ secrets.AWS_SECRET_KEY }}
-            aws-region: ${{ inputs.AWS_REGION }}
+            aws-region: ${{ secrets.AWS_REGION }}
       - run: npm i
       - run: npm run build
       - run: aws s3 sync ./build s3://${{ secrets.s3_BUCKET_NAME }}
