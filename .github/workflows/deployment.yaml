@@ -19,7 +19,7 @@ permissions:
 
 jobs:
   build_and_deploy:
-    if: github.event.name == 'push' && github.refs == 'refs/header/main'
+    if: github.refs == 'refs/header/main'
     runs-on: ubuntu-latest
     name: Build and Deploy
     steps:
