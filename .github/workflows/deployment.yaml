@@ -19,7 +19,6 @@ permissions:
 
 jobs:
   build_and_deploy:
-    if: github.event_name == 'push' && github.event.action == 'closed'
     runs-on: ubuntu-latest
     name: Build and Deploy
     steps:
