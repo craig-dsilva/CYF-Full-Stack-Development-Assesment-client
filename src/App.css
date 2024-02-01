@@ -83,7 +83,7 @@ code {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1500px) {
   .Videos {
     grid-template-columns: repeat(4, auto);
   }
