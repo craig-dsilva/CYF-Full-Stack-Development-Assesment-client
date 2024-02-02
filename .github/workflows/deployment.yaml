@@ -23,6 +23,7 @@ jobs:
     name: Test
     steps:
       - uses: actions/checkout@v4
+      - run: npm ci
       - name: Test
         run: npm test
         
