@@ -3,8 +3,6 @@ import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 
 const AddVideo = ({
-  videos,
-  handleVideos,
   hideForm,
   handleLoading,
   setError,
@@ -42,8 +40,6 @@ const AddVideo = ({
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(newVideo),
       }).catch((error) => setError(error));
-      newVideo.id = newVideo.id ? newVideo.id + 1 : 0; // This id is only for the client array and is not sent to the server
-      handleVideos([...videos, newVideo]);
       handleLoading(false);
     }
   };
@@ -86,7 +82,7 @@ const AddVideo = ({
       </div>
       {/* Displays the form error type */}
       {titleError ? (
-        <p>Please enter a title</p>
+        <p data-testid="title-error">Please enter a title</p>
       ) : urlError ? (
         <p>Please enter a YouTube URL</p>
       ) : (
