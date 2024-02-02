@@ -82,7 +82,7 @@ const AddVideo = ({
       </div>
       {/* Displays the form error type */}
       {titleError ? (
-        <p>Please enter a title</p>
+        <p data-testid="title-error">Please enter a title</p>
       ) : urlError ? (
         <p>Please enter a YouTube URL</p>
       ) : (
