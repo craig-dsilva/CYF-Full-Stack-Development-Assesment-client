@@ -49,8 +49,6 @@ const App = () => {
           </Button>
         ) : (
           <AddVideo
-            videos={videos}
-            handleVideos={setVideos}
             handleLoading={setLoading}
             hideForm={() => setHideForm()}
           />
