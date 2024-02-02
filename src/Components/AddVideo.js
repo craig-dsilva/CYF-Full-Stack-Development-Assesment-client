@@ -3,8 +3,6 @@ import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 
 const AddVideo = ({
-  videos,
-  handleVideos,
   hideForm,
   handleLoading,
   setError,
