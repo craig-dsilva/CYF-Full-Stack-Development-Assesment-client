@@ -42,8 +42,6 @@ const AddVideo = ({
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(newVideo),
       }).catch((error) => setError(error));
-      newVideo.id = newVideo.id ? newVideo.id + 1 : 0; // This id is only for the client array and is not sent to the server
-      handleVideos([...videos, newVideo]);
       handleLoading(false);
     }
   };
